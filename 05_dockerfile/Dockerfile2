@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+Run echo '(shell from) 안녕하세요'  //서브 쉘에서 실행 
+RUN ["echo", " 안녕하세요 Exec 형식입니다."] //현재 쉘에서 실행 
+RUN ["/bin/bash", "-c", "echo '안녕하세요. Exec 형식에서 bash를 사용해 보았습니다.'"]
